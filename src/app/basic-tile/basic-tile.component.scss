@@ -1,0 +1,14 @@
+#main-container {
+  width: fit-content;
+  height: fit-content;
+  background-color: #ffefce;
+  border: 13px solid #7d634c;
+  border-radius: 20px;
+
+  p {
+    margin:0 10px;
+    color: #ffefce;
+    text-shadow: 2px 0 6px #7d634c, -2px 0 6px #7d634c, 0 2px 6px #7d634c, 0 -2px 6px #7d634c, 1px 1px 6px #7d634c,
+      -1px -1px 6px #7d634c, 1px -1px 6px #7d634c, -1px 1px 6px #7d634c;
+  }
+}
