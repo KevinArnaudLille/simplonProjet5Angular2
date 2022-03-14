@@ -18,5 +18,4 @@ export class BasicTileComponent implements OnInit {
     this.fontDOM = document.querySelector("#main-container p")
     this.fontDOM.style.fontSize = this.fontSize + "px";
   }
-
 }
