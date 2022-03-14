@@ -4,11 +4,15 @@ import { DataFromApi } from 'src/services/dataFromApi.service';
 import {HttpClientModule} from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { TestAPIComponent } from './test-api/test-api.component';
+import { ReturnBtnComponent } from './return-btn/return-btn.component';
+import { LogoComponent } from './logo/logo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TestAPIComponent
+    TestAPIComponent,
+    ReturnBtnComponent,
+    LogoComponent
   ],
   imports: [
     BrowserModule,
