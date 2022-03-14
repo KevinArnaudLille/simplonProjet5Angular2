@@ -7,6 +7,7 @@ import { TestAPIComponent } from './test-api/test-api.component';
 import { ReturnBtnComponent } from './return-btn/return-btn.component';
 import { LogoComponent } from './logo/logo.component';
 import { FlagContainerComponent } from './flag-container/flag-container.component';
+import { BasicTileComponent } from './basic-tile/basic-tile.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { FlagContainerComponent } from './flag-container/flag-container.componen
     TestAPIComponent,
     ReturnBtnComponent,
     LogoComponent,
-    FlagContainerComponent
+    FlagContainerComponent,
+    BasicTileComponent
   ],
   imports: [
     BrowserModule,
