@@ -1,0 +1,11 @@
+.return-btn {
+  .return-circle {
+    position: relative;
+  }
+  .return-arrow {
+    position: absolute;
+    top: 5%;
+    left: 2.5%;
+    z-index: 1;
+  }
+}
