@@ -1,6 +1,22 @@
 .flag-container {
-  width: 400px;
-  height: 200px;
+  width: 100%;
+  height: auto;
   background-color: #ffefce;
-  border: 2px solid #7d634c;
+  border: 4px solid #7d634c;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  .flag {
+    margin: 2.5%;
+    width: 250px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+  }
 }
