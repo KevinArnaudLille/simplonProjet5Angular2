@@ -1,11 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { DataFromApi } from 'src/services/dataFromApi.service';
-import {HttpClientModule} from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
-<<<<<<< HEAD
 import { HeaderComponent } from './header/header.component';
-=======
 import { ScoreButtonComponent } from './score-button/score-button.component';
 import { TestAPIComponent } from './test-api/test-api.component';
 import { ReturnBtnComponent } from './return-btn/return-btn.component';
@@ -18,14 +16,11 @@ import { TemplateCountryComponent } from './template-country/template-country.co
 import { TemplateCapitalComponent } from './template-capital/template-capital.component';
 import { BasicTileComponent } from './basic-tile/basic-tile.component';
 
->>>>>>> 62f213287467e676c5d29bc1d7dc6533ea10cfd4
 
 @NgModule({
   declarations: [
     AppComponent,
-<<<<<<< HEAD
-    HeaderComponent
-=======
+    HeaderComponent,
     ScoreButtonComponent,
     TestAPIComponent,
     ReturnBtnComponent,
@@ -38,7 +33,6 @@ import { BasicTileComponent } from './basic-tile/basic-tile.component';
     TemplateCapitalComponent,
     BasicTileComponent
 
->>>>>>> 62f213287467e676c5d29bc1d7dc6533ea10cfd4
   ],
   imports: [
     BrowserModule,
