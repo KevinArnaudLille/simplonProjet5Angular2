@@ -29,5 +29,5 @@ export class TestAPIComponent implements OnInit {
     console.log(this.api.generateRandomAnswerCountry());
   }
   
-
+  textToShow = "Coucou";
 }
