@@ -28,12 +28,13 @@ import { RouterModule } from '@angular/router';
     TemplateCountryComponent,
     TemplateCapitalComponent,
     BasicTileComponent,
-
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     RouterModule.forRoot([
       { path: 'template-continent', component: TemplateContinentComponent },
+      { path: '', component: HomeComponent },
       { path: 'template-country', component: TemplateCountryComponent },
       { path: 'template-capital', component: TemplateCapitalComponent },
     ]),
