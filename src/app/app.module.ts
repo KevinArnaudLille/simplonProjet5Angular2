@@ -12,6 +12,8 @@ import { TemlateFlagComponent } from './temlate-flag/temlate-flag.component';
 import { TemplateContinentComponent } from './template-continent/template-continent.component';
 import { TemplateCountryComponent } from './template-country/template-country.component';
 import { TemplateCapitalComponent } from './template-capital/template-capital.component';
+import { BasicTileComponent } from './basic-tile/basic-tile.component';
+
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { TemplateCapitalComponent } from './template-capital/template-capital.co
     TemplateContinentComponent,
     TemplateCountryComponent,
     TemplateCapitalComponent
+    BasicTileComponent
+
   ],
   imports: [
     BrowserModule,
