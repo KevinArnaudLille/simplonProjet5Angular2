@@ -20,6 +20,11 @@ export class TestAPIComponent implements OnInit {
     this.api.removeCountryFromRemaingList(this.api.randomCountry);
     console.log(this.api.remaingCountries);
     console.log(this.api.isAnswerCorrect(this.api.randomCountry));
+    console.log(this.api.isAnswerCorrect(this.api.generateRandomAnswerCountry()));
+    console.log(this.api.generateRandomAnswerCountry());
+    console.log(this.api.generateRandomAnswerCountry());
+    console.log(this.api.generateRandomAnswerCountry());
+    console.log(this.api.generateRandomAnswerCountry());
     console.log(this.api.generateRandomAnswerCountry());
     console.log(this.api.generateRandomAnswerCountry());
   }
