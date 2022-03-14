@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { DataFromApi } from 'src/services/dataFromApi.service';
 
 @Component({
   selector: 'app-score-button',
@@ -7,16 +8,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ScoreButtonComponent implements OnInit {
 
-  constructor() { }
+  @Input () countrySelected: any;
+  correctAnswers = 0;
+  totalAnswers = 0;
+
+  constructor(private api: DataFromApi) { }
 
   ngOnInit(): void {
   }
 
+  score() {
+    if (this.api.isAnswerCorrect(this.countrySelected) === true) {
+      this.correctAnswers++;
+    }
+    this.totalAnswers++;
+  }
+
 }
-  // de nouveau test pour le bouton de score //
-//   if(win){
-//     this.correctAnswers++;
-//   }
-//   this.totalAnswer++;
+
+// de nouveau test pour le bouton de score //
+//
 // 
 // Cela pourra être utilise si l'on fait une page résultats finaux//

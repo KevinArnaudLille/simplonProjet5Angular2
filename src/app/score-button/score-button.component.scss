@@ -1,13 +1,17 @@
 .ScoreBtn{
     background-color:rgba(255,239,206);
-    border-radius: 125;
-    border:9pt linear rgba(125,99,76) ;
+    border: 5px solid #7d634c;
     padding: 10px;
+    width:20%;
+    height: 150px;
+    border-radius: 50%;
+
 }
 .ScoreBtn p{
-    font-family: Baloo Bhai;
     font-size: 85px;
-    color:rgba(255,239,206);
-    border-color: rgba(125,99,76);
+    color: #7d634c;
     text-align: center;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
 }
