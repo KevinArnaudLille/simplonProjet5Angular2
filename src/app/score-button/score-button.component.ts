@@ -8,15 +8,17 @@ import { DataFromApi } from 'src/services/dataFromApi.service';
 })
 export class ScoreButtonComponent implements OnInit {
 
+//On définit les les composants de la fonction score //
   @Input () countrySelected: any;
   correctAnswers = 0;
   totalAnswers = 0;
 
+ //Pour appeler l'API //
   constructor(private api: DataFromApi) { }
 
   ngOnInit(): void {
   }
-
+// Fonction simple pour compter le score //
   score() {
     if (this.api.isAnswerCorrect(this.countrySelected) === true) {
       this.correctAnswers++;

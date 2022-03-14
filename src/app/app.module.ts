@@ -14,6 +14,7 @@ import { TemplateContinentComponent } from './template-continent/template-contin
 import { TemplateCountryComponent } from './template-country/template-country.component';
 import { TemplateCapitalComponent } from './template-capital/template-capital.component';
 import { BasicTileComponent } from './basic-tile/basic-tile.component';
+import { TitleCountryComponent } from './title-country/title-country.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { BasicTileComponent } from './basic-tile/basic-tile.component';
     TemplateContinentComponent,
     TemplateCountryComponent,
     TemplateCapitalComponent,
-    BasicTileComponent
+    BasicTileComponent,
+    TitleCountryComponent
 
   ],
   imports: [
