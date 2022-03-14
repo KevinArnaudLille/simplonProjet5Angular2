@@ -26,9 +26,8 @@ import { BasicTileComponent } from './basic-tile/basic-tile.component';
     TemlateFlagComponent,
     TemplateContinentComponent,
     TemplateCountryComponent,
-    TemplateCapitalComponent
+    TemplateCapitalComponent,
     BasicTileComponent
-
   ],
   imports: [
     BrowserModule,
