@@ -9,9 +9,11 @@
 }
 .ScoreBtn p{
     font-size: 85px;
-    color: #7d634c;
+    color: rgba(255,239,206);
+    text-shadow: 2px 0 6px #7d634c, -2px 0 6px #7d634c, 0 2px 6px #7d634c, 0 -2px 6px #7d634c, 1px 1px 6px #7d634c,
+      -1px -1px 6px #7d634c, 1px -1px 6px #7d634c, -1px 1px 6px #7d634c;
     text-align: center;
     display: block;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 10px;
 }
