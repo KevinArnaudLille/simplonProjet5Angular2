@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { DataFromApi } from 'src/services/dataFromApi.service';
 import {HttpClientModule} from '@angular/common/http';
 import { AppComponent } from './app.component';
+import { ScoreButtonComponent } from './score-button/score-button.component';
 import { TestAPIComponent } from './test-api/test-api.component';
 import { ReturnBtnComponent } from './return-btn/return-btn.component';
 import { LogoComponent } from './logo/logo.component';
@@ -18,6 +19,7 @@ import { BasicTileComponent } from './basic-tile/basic-tile.component';
 @NgModule({
   declarations: [
     AppComponent,
+    ScoreButtonComponent,
     TestAPIComponent,
     ReturnBtnComponent,
     LogoComponent,

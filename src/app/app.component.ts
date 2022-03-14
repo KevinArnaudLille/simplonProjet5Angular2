@@ -15,3 +15,12 @@ export class AppComponent implements OnInit{
     this.api.setAllCountries()
   }
 }
+
+  // de nouveau test pour le bouton de score //
+//   if(option){
+//     this.correctAnswers++;
+//   }else{
+//     this.incorrectAnswers++
+//   }
+// }
+// Cela pourra être utilise si o'on fait une page résultats finaux//
