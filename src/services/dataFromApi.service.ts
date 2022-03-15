@@ -1,5 +1,5 @@
 import { HttpClient } from "@angular/common/http";
-import { Injectable, OnInit } from "@angular/core";
+import { Injectable} from "@angular/core";
 
 console.log("test1");
 
@@ -12,6 +12,11 @@ export class DataFromApi {
   allCountriesData: any = [];
   toGenerateAnswerCountries : any = []
   remaingCountries: any = [];
+  allPossibleAnswer : any = [];
+
+  firstGeneratedCountry:any;
+  secondGeneratedCountry:any;
+  isDownloadDone:boolean=false;
 
   // Generated random country to guess
   randomCountry: any;
@@ -56,4 +61,31 @@ export class DataFromApi {
     this.toGenerateAnswerCountries = this.toGenerateAnswerCountries.filter((e: any) => e !== this.countryToSend)
     return this.countryToSend
   }
+
+  shuffleListData(a:any) {
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  }
+
+  generateAllPossibleAnswers(){
+    this.allPossibleAnswer = [this.randomCountry,this.generateRandomAnswerCountry(),this.generateRandomAnswerCountry()]
+    this.isDownloadDone = !this.isDownloadDone;
+    return this.shuffleListData(this.allPossibleAnswer)
+  }
+  
+  generateAllPossibleAnswersForContinent(){
+    do {
+      this.firstGeneratedCountry = this.generateRandomAnswerCountry();
+      this.secondGeneratedCountry = this.generateRandomAnswerCountry();
+    } while ((this.firstGeneratedCountry.continents[0] == this.secondGeneratedCountry.continents[0]) || (this.firstGeneratedCountry.continents[0] == this.randomCountry.continents[0]) || (this.secondGeneratedCountry.continents[0] == this.randomCountry.continents[0]));
+    
+    this.allPossibleAnswer = [this.randomCountry,this.firstGeneratedCountry,this.secondGeneratedCountry]
+    
+    this.isDownloadDone = !this.isDownloadDone;
+    return this.shuffleListData(this.allPossibleAnswer)
+  }
+  
 }

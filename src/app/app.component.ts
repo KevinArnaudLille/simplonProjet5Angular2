@@ -12,10 +12,7 @@ export class AppComponent implements OnInit{
   constructor(private api:DataFromApi){}
 
   ngOnInit(): void {
-    this.api.setAllCountries()
 
-    console.log("i'm in app component");
-    console.log(this.api.randomCountry);
   }
 }
 
