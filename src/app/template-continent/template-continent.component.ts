@@ -15,7 +15,6 @@ export class TemplateContinentComponent implements OnInit {
   allAnswerCountries:any = [];
   correctAnswers:any = 0;
   totalAnswers:any = 0;
-  isDownloadDone:boolean = this.api.isDownloadDone;
 
   startBtnClicked(){
     this.generateQuestion();
@@ -24,11 +23,10 @@ export class TemplateContinentComponent implements OnInit {
   
   checkAnswer(country:any){
     this.api.isDownloadDone = !this.api.isDownloadDone;
-    this.isDownloadDone = this.api.isDownloadDone;
     console.log("couille");
     console.log(this.api.isDownloadDone);
     
-    if (this.api.isAnswerCorrect(country) === true) {
+    if (this.api.isAnswerCorrect(country)) {
       this.correctAnswers++;
     }
     this.totalAnswers++;
@@ -39,7 +37,6 @@ export class TemplateContinentComponent implements OnInit {
     this.api.generateRandomCountries();
     this.randomCountry = this.api.randomCountry.name.common;
     this.allAnswerCountries = this.api.generateAllPossibleAnswersForContinent();
-    this.isDownloadDone = this.api.isDownloadDone;
   }
   
   constructor(private api:DataFromApi) { }
@@ -47,5 +44,4 @@ export class TemplateContinentComponent implements OnInit {
   ngOnInit(): void {
     this.api.setAllCountries()
   }
-
 }

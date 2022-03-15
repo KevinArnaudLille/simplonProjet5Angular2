@@ -6,6 +6,10 @@
   border: 13px solid #7d634c;
   border-radius: 20px;
 
+  &:hover{
+    cursor: pointer;
+  }
+
   p {
     font-size: 60px;
     margin:0 10px;
