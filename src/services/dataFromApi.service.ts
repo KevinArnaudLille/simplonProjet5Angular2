@@ -1,34 +1,39 @@
-import { HttpClient } from "@angular/common/http";
-import { Injectable, OnInit } from "@angular/core";
+import { HttpClient } from '@angular/common/http';
+import { Injectable, OnInit } from '@angular/core';
 
-console.log("test1");
+console.log('test1');
 
 @Injectable()
 export class DataFromApi {
-  constructor(private _httpClient: HttpClient) {  }
+  generateAllPossibleAnswersForContinent(): any {
+    throw new Error('Method not implemented.');
+  }
+  generateAllPossibleAnswersForCapital(): any {
+    throw new Error('Method not implemented.');
+  }
+  constructor(private _httpClient: HttpClient) {}
 
   private _RESTCountriesAPIUrl = 'https://restcountries.com/v3.1/all';
 
   allCountriesData: any = [];
-  toGenerateAnswerCountries : any = []
+  toGenerateAnswerCountries: any = [];
   remaingCountries: any = [];
 
   // Generated random country to guess
   randomCountry: any;
-  
-  // Random country generated to feed possible incorrect answers 
-  countryToSend : any;
+
+  // Random country generated to feed possible incorrect answers
+  countryToSend: any;
 
   setAllCountries() {
-    this._httpClient.get<any>(this._RESTCountriesAPIUrl)
+    this._httpClient
+      .get<any>(this._RESTCountriesAPIUrl)
       .toPromise()
-      .then(
-        response => {
-          this.allCountriesData = response;
-          this.remaingCountries = response;
-          this.toGenerateAnswerCountries = response;
-        }
-      );
+      .then((response) => {
+        this.allCountriesData = response;
+        this.remaingCountries = response;
+        this.toGenerateAnswerCountries = response;
+      });
   }
 
   resetRemainingCountries() {
@@ -36,24 +41,47 @@ export class DataFromApi {
   }
 
   generateRandomCountries() {
-    this.randomCountry = this.remaingCountries[
-      Math.floor(Math.random() * this.remaingCountries.length)
-    ];
+    this.randomCountry =
+      this.remaingCountries[
+        Math.floor(Math.random() * this.remaingCountries.length)
+      ];
   }
 
   removeCountryFromRemaingList(country: any) {
-    this.remaingCountries = this.remaingCountries.filter((e: any) => e !== country);
+    this.remaingCountries = this.remaingCountries.filter(
+      (e: any) => e !== country
+    );
     this.toGenerateAnswerCountries = this.remaingCountries;
   }
 
-  isAnswerCorrect(country: any){
-    return country == this.randomCountry
+  isAnswerCorrect(country: any) {
+    return country == this.randomCountry;
   }
 
-  generateRandomAnswerCountry(){
-    this.toGenerateAnswerCountries = this.remaingCountries.filter((e: any) => e !== this.randomCountry);
-    this.countryToSend = this.toGenerateAnswerCountries[Math.floor(Math.random() * this.toGenerateAnswerCountries.length)];
-    this.toGenerateAnswerCountries = this.toGenerateAnswerCountries.filter((e: any) => e !== this.countryToSend)
-    return this.countryToSend
+  generateRandomAnswerCountry() {
+    this.toGenerateAnswerCountries = this.remaingCountries.filter(
+      (e: any) => e !== this.randomCountry
+    );
+    this.countryToSend =
+      this.toGenerateAnswerCountries[
+        Math.floor(Math.random() * this.toGenerateAnswerCountries.length)
+      ];
+    this.toGenerateAnswerCountries = this.toGenerateAnswerCountries.filter(
+      (e: any) => e !== this.countryToSend
+    );
+    return this.countryToSend;
   }
-}
+//   generateRandomAnswerCapital() {
+//     this.toGenerateAnswerCapital = this.remaingCapitals.filter(
+//       (e: any) => e !== this.randomCapital
+//     );
+//     this.capitalToSend =
+//       this.toGenerateAnswerCapital[
+//         Math.floor(Math.random() * this.toGenerateAnswerCountries.length)
+//       ];
+//     this.toGenerateAnswerCapital = this.toGenerateAnswerCountries.filter(
+//       (e: any) => e !== this.capitalToSend
+//     );
+//     return this.capitalToSend;
+//   }
+// }
