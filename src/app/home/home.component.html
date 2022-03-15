@@ -1,20 +1,20 @@
 <div id="capitale-pin">
-  <app-map-pin></app-map-pin>
+  <app-map-pin (click)="showCapital()"></app-map-pin>
 </div>
-<div id="capitale-tile-link">
+<div id="capitale-tile-link" *ngIf="toggleCapital">
   <app-basic-tile routerLink="/template-capital" text="CAPITALE" fontSize=60></app-basic-tile>
 </div>
 
 <div id="continent-pin">
-  <app-map-pin></app-map-pin>
+  <app-map-pin (click)="showContinent()"></app-map-pin>
 </div>
-<div id="continent-tile-link">
+<div id="continent-tile-link" *ngIf="toggleContinent">
   <app-basic-tile routerLink="/template-continent" text="CONTINENT" fontSize=60></app-basic-tile>
 </div>
 
 <div id="flag-pin">
-  <app-map-pin></app-map-pin>
+  <app-map-pin (click)="showFlag()"></app-map-pin>
 </div>
-<div id="flag-tile-link">
+<div id="flag-tile-link" *ngIf="toggleFlag">
   <app-basic-tile routerLink="/template-country" text="DRAPEAUX" fontSize=60></app-basic-tile>
 </div>
