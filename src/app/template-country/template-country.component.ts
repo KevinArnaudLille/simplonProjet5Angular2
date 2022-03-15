@@ -14,7 +14,6 @@ export class TemplateCountryComponent implements OnInit {
   totalAnswers:any = 0;
 
   randomCountry:any;
-
   allAnswerCountries:any = [];
 
   constructor(private api:DataFromApi) { }
@@ -35,11 +34,11 @@ export class TemplateCountryComponent implements OnInit {
   }
 
   checkAnswer(country:any){
-
     if (this.api.isAnswerCorrect(country)) {
       this.correctAnswers++;
     }
     this.totalAnswers++;
     this.generateQuestion();
+    
   }
 }

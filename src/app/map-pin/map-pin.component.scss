@@ -1,12 +1,46 @@
+@keyframes pulse {
+  from{
+    width: 50px;
+    height: 50px;
+    background-color: #ffefce;
+  }
+  50%{
+    width: 70px;
+    height: 70px;
+    transform: translate(-10px, -10px);
+    background-color: #faedd3;
+  }
+  to {
+    width: 50px;
+    height: 50px;
+    background-color: #ffefce;
+  }
+}
+
+@keyframes pulseCorrection {
+  from{
+    background-color: #ffefce;
+  }
+  50%{
+    transform: translate(25px, 39px);
+    background-color: #faedd3;
+  }
+  to {
+    background-color: #ffefce;
+  }
+}
+
+
+
 #head{
   width: 50px;
   height: 50px;
   background-color: #ffefce;
   border-radius: 100%;
   border: 5px solid #B37659;
+  animation: 1s infinite pulse;
 }
 #tail{
-  position: relative;
   width: 20px;
   height: 100px;
   background-color: #ffefce;
@@ -14,5 +48,5 @@
   // right: 50%;
   transform: translate(73%, 30%);
   border-radius: 10px;
-
+  animation: 1s infinite pulseCorrection;
 }

@@ -1,12 +1,19 @@
-.return-btn {
-  .return-circle {
-    position: relative;
+@keyframes rotationOnHover {
+  from{
+    transform: rotate(0deg);
   }
+  to{
+    transform: rotate(-360deg);
+  }
+}
 
-  .return-arrow {
-    position: relative;
-    margin-bottom: 2.5%;
-    margin-left: -9%;
-    z-index: 1;
+.return-arrow {
+  z-index: 1;
+  background-color: rgba(255, 239, 206);
+  border: 10px solid #7d634c;
+  padding: 15px;
+  border-radius: 95%;
+  &:hover{
+    animation: 1s infinite rotationOnHover;
   }
 }

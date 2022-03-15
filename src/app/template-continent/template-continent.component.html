@@ -16,8 +16,8 @@
   <div *ngFor="let country of allAnswerCountries" class="answer-contient-tiles">
     <app-basic-tile [text]="country.continents[0]" fontSize=50 (click)="checkAnswer(country)"></app-basic-tile>
   </div>
+</div>
 
   <div id="return-continent-part">
     <app-return-btn></app-return-btn>
   </div>
-</div>

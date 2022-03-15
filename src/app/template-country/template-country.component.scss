@@ -1,0 +1,24 @@
+#start-continent-part{
+  margin: auto;
+  display:flex;
+  justify-content: center;
+  float: center;
+  }
+  
+  #title-continent-part{
+      margin: auto;
+  }
+  .answer-contient-tiles{
+      margin:auto;
+      display: inline-end;
+      float: right;
+      padding-right:200px;
+      &:hover{
+        cursor: pointer;
+      }
+  }
+  #return-continent-part{
+      position :absolute;
+      bottom:15px;
+      left: 15px;
+  }
