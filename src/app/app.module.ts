@@ -13,12 +13,10 @@ import { TemplateContinentComponent } from './template-continent/template-contin
 import { TemplateCountryComponent } from './template-country/template-country.component';
 import { TemplateCapitalComponent } from './template-capital/template-capital.component';
 import { BasicTileComponent } from './basic-tile/basic-tile.component';
-<<<<<<< HEAD
 import { TitleCountryComponent } from './title-country/title-country.component';
-
-=======
 import { RouterModule } from '@angular/router';
->>>>>>> e42246fda788de44c89cc844c6e7a4579ed24612
+import { NavComponent } from './nav/nav.component';
+
 
 @NgModule({
   declarations: [
@@ -33,11 +31,8 @@ import { RouterModule } from '@angular/router';
     TemplateCountryComponent,
     TemplateCapitalComponent,
     BasicTileComponent,
-<<<<<<< HEAD
+    NavComponent,
     TitleCountryComponent
-
-=======
->>>>>>> e42246fda788de44c89cc844c6e7a4579ed24612
   ],
   imports: [
     BrowserModule,

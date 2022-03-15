@@ -1,0 +1,21 @@
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  div {
+    margin-bottom: 10%;
+
+    a {
+      font-weight: bolder;
+      font-size: 48px;
+      background-color: #ffefce;
+      border: 8px solid #795d45;
+      text-decoration: none;
+      border-radius: 20%;
+      -webkit-border-radius: 20%;
+      -moz-border-radius: 20%;
+      -ms-border-radius: 20%;
+      -o-border-radius: 20%;
+    }
+  }
+}
