@@ -15,6 +15,8 @@ import { TemplateCapitalComponent } from './template-capital/template-capital.co
 import { BasicTileComponent } from './basic-tile/basic-tile.component';
 import { TitleCountryComponent } from './title-country/title-country.component';
 import { RouterModule } from '@angular/router';
+import { NavComponent } from './nav/nav.component';
+
 
 @NgModule({
   declarations: [
@@ -30,6 +32,7 @@ import { RouterModule } from '@angular/router';
     TemplateCapitalComponent,
     BasicTileComponent,
     TitleCountryComponent,
+    NavComponent,
   ],
   imports: [
     BrowserModule,
