@@ -10,6 +10,8 @@ export class HeaderComponent implements OnInit {
 
   @Input() text = "";
   @Input() fontSize = "20";
+  title = "Le quizz sur les pays du monde! ";
+  title1 = "Choississez votre quizz et réalissez le meilleur score en 20 questions.";
   constructor() { }
 
   ngOnInit(): void {
