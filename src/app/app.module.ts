@@ -19,7 +19,11 @@ import { TitleCountryComponent } from './title-country/title-country.component';
 import { RouterModule } from '@angular/router';
 //import { RouterModule } from '@angular/router';//
 import { NavComponent } from './nav/nav.component';
+<<<<<<< HEAD
 import { MapPinComponent } from './map-pin/map-pin.component';
+=======
+import { HeaderTitleComponent } from './header-title/header-title.component';
+>>>>>>> da7a653901e91e0700e0c7b9d33bc86ba34cd6f6
 
 
 @NgModule({
@@ -38,7 +42,11 @@ import { MapPinComponent } from './map-pin/map-pin.component';
     BasicTileComponent,
     TitleCountryComponent,
     NavComponent,
+<<<<<<< HEAD
     MapPinComponent,
+=======
+    HeaderTitleComponent,
+>>>>>>> da7a653901e91e0700e0c7b9d33bc86ba34cd6f6
   ],
   
   imports: [

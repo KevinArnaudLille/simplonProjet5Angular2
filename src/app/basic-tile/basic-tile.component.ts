@@ -7,15 +7,15 @@ import { Component, Input, AfterViewInit } from '@angular/core';
 })
 export class BasicTileComponent implements AfterViewInit {
 
-  fontDOM:any;
+  fontDOM: any;
 
   constructor() {
-  
+
   }
-  
-  @Input() text = "";
+
+  @Input() text = "Le Quizz sur les pays du monde ! Choisissez votre quizz et réalisez le meilleur score en 20 questions.";
   @Input() fontSize = "60";
-  
+
   ngAfterViewInit() {
     // this.fontDOM = document.querySelector(`#${this.text}`);
     // this.fontDOM.style.fontSize = this.fontSize + "px";    

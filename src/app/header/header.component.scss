@@ -1,17 +1,30 @@
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 nav {
-     
-      background-color: rgb(109, 82, 50);
-      height: 80px;
-      opacity: O,7;
-      font-family: 'Baloo Bhai 2', cursive;
-      font-size: 20px;
-      margin-bottom: 20px;
-      padding: 10px;
+
+    position: absolute;
+    width: 100%;
+    top: 40px;
+    background-color: rgba(109, 82, 50, 0.753);
+    // height: 80px;
+    opacity: O,7;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 40px;
+    // margin-bottom: 20px;
+    padding: 20px 0;
 }
 p{
     text-align: center;
-    color: rgb(255, 255, 255)
-    
+    margin-left: 100px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: rgb(255, 255, 255);
 
+
+    
 }
 
