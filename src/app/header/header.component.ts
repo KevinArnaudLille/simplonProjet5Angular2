@@ -1,4 +1,4 @@
-import { Component, OnInit,Input } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -9,7 +9,7 @@ export class HeaderComponent implements OnInit {
   fontDOM: any;
 
   @Input() text = "";
-  @Input() fontSize = "10";
+  @Input() fontSize = "20";
   constructor() { }
 
   ngOnInit(): void {
