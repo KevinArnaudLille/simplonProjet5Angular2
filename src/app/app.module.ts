@@ -14,14 +14,11 @@ import { TemplateCountryComponent } from './template-country/template-country.co
 import { TemplateCapitalComponent } from './template-capital/template-capital.component';
 import { BasicTileComponent } from './basic-tile/basic-tile.component';
 import { TitleCountryComponent } from './title-country/title-country.component';
-<<<<<<< HEAD
 
 import { RouterModule } from '@angular/router';
-=======
-import { RouterModule } from '@angular/router';
+//import { RouterModule } from '@angular/router';//
 import { NavComponent } from './nav/nav.component';
 
->>>>>>> c41d4770da7e39404167ce40e7ec556744193a6d
 
 @NgModule({
   declarations: [
@@ -36,17 +33,8 @@ import { NavComponent } from './nav/nav.component';
     TemplateCountryComponent,
     TemplateCapitalComponent,
     BasicTileComponent,
-<<<<<<< HEAD
-<<<<<<< HEAD
-    TitleCountryComponent,
-=======
-    NavComponent,
-    TitleCountryComponent
->>>>>>> c41d4770da7e39404167ce40e7ec556744193a6d
-=======
     TitleCountryComponent,
     NavComponent,
->>>>>>> 5e8d2aac0beee2575146c0d730be341edb1ff15d
   ],
   
   imports: [
