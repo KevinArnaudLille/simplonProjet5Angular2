@@ -15,7 +15,9 @@ import { TemplateCountryComponent } from './template-country/template-country.co
 import { TemplateCapitalComponent } from './template-capital/template-capital.component';
 import { BasicTileComponent } from './basic-tile/basic-tile.component';
 import { TitleCountryComponent } from './title-country/title-country.component';
+
 import { RouterModule } from '@angular/router';
+//import { RouterModule } from '@angular/router';//
 import { NavComponent } from './nav/nav.component';
 import { HeaderTitleComponent } from './header-title/header-title.component';
 
@@ -38,6 +40,7 @@ import { HeaderTitleComponent } from './header-title/header-title.component';
     NavComponent,
     HeaderTitleComponent,
   ],
+  
   imports: [
     BrowserModule,
     HttpClientModule,
