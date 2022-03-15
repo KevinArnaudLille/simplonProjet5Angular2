@@ -9,12 +9,9 @@ export class HeaderComponent implements OnInit {
   fontDOM: any;
 
   @Input() text = "";
-  @Input() fontSize = "10";
   constructor() { }
 
   ngOnInit(): void {
-    this.fontDOM = document.querySelector("#header-container p")
-    this.fontDOM.style.fontSize = this.fontSize + "px";
   }
 
 }

@@ -1,17 +1,19 @@
 nav {
      
-      background-color: rgb(109, 82, 50);
-      height: 80px;
-      opacity: O,7;
+      background-color: rgba(109, 82, 50,0.7);
+      height: fit-content;
       font-family: 'Baloo Bhai 2', cursive;
       font-size: 20px;
       margin-bottom: 20px;
-      padding: 10px;
-}
-p{
-    text-align: center;
-    color: rgb(255, 255, 255)
-    
+      padding: 20px;
 
+      display:flex;
+      justify-content: space-around;
+      align-items: center;
+}
+span{
+    font-size: 80px;
+    text-align: center;
+    color: rgb(255, 255, 255);
 }
 
