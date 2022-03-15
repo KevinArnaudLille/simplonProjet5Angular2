@@ -37,11 +37,16 @@ import { NavComponent } from './nav/nav.component';
     TemplateCapitalComponent,
     BasicTileComponent,
 <<<<<<< HEAD
+<<<<<<< HEAD
     TitleCountryComponent,
 =======
     NavComponent,
     TitleCountryComponent
 >>>>>>> c41d4770da7e39404167ce40e7ec556744193a6d
+=======
+    TitleCountryComponent,
+    NavComponent,
+>>>>>>> 5e8d2aac0beee2575146c0d730be341edb1ff15d
   ],
   
   imports: [
