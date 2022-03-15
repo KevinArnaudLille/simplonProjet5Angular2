@@ -28,7 +28,7 @@ export class TemplateContinentComponent implements OnInit {
     console.log("couille");
     console.log(this.api.isDownloadDone);
     
-    if (this.api.isAnswerCorrect(country) === true) {
+    if (this.api.isAnswerCorrect(country)) {
       this.correctAnswers++;
     }
     this.totalAnswers++;
@@ -47,5 +47,4 @@ export class TemplateContinentComponent implements OnInit {
   ngOnInit(): void {
     this.api.setAllCountries()
   }
-
 }
