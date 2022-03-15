@@ -9,7 +9,6 @@ import { DataFromApi } from 'src/services/dataFromApi.service';
 export class TemplateCountryComponent implements OnInit {
 
   hasStartBtnBeenClicked:boolean=false;
-  isDownloadDone:boolean = this.api.isDownloadDone;
 
   correctAnswers:any = 0;
   totalAnswers:any = 0;
@@ -33,12 +32,10 @@ export class TemplateCountryComponent implements OnInit {
     this.api.generateRandomCountries();
     this.randomCountry = this.api.randomCountry.name.common;
     this.allAnswerCountries = this.api.generateAllPossibleAnswersForContinent();
-    // this.isDownloadDone = this.api.isDownloadDone;
   }
 
   checkAnswer(country:any){
-    // this.api.isDownloadDone = !this.api.isDownloadDone;
-    // this.isDownloadDone = this.api.isDownloadDone;
+
     if (this.api.isAnswerCorrect(country)) {
       this.correctAnswers++;
     }

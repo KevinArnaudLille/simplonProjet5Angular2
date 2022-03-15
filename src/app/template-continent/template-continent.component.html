@@ -2,7 +2,7 @@
   <app-basic-tile text="START" fontSize=50 (click)="startBtnClicked()"></app-basic-tile>
 </div>
 
-<div *ngIf="hasStartBtnBeenClicked && isDownloadDone">
+<div *ngIf="hasStartBtnBeenClicked">
 
   <div id="score-continent-part">
     <app-score-button [correctAnswers]="correctAnswers" [totalAnswers]="totalAnswers"></app-score-button>
