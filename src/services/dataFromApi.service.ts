@@ -1,8 +1,6 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable} from "@angular/core";
 
-console.log("test1");
-
 @Injectable()
 export class DataFromApi {
   constructor(private _httpClient: HttpClient) {  }
@@ -80,12 +78,17 @@ export class DataFromApi {
     do {
       this.firstGeneratedCountry = this.generateRandomAnswerCountry();
       this.secondGeneratedCountry = this.generateRandomAnswerCountry();
+      console.log("mange tes morts");
+      
     } while ((this.firstGeneratedCountry.continents[0] == this.secondGeneratedCountry.continents[0]) || (this.firstGeneratedCountry.continents[0] == this.randomCountry.continents[0]) || (this.secondGeneratedCountry.continents[0] == this.randomCountry.continents[0]));
     
     this.allPossibleAnswer = [this.randomCountry,this.firstGeneratedCountry,this.secondGeneratedCountry]
     
     this.isDownloadDone = !this.isDownloadDone;
-    return this.shuffleListData(this.allPossibleAnswer)
+    this.allPossibleAnswer = this.shuffleListData(this.allPossibleAnswer);
+    console.log(this.allPossibleAnswer);
+    
+    return this.allPossibleAnswer
   }
   
 }

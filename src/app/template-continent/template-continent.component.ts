@@ -18,11 +18,10 @@ export class TemplateContinentComponent implements OnInit {
   isDownloadDone:boolean = this.api.isDownloadDone;
 
   startBtnClicked(){
-    this.api.setAllCountries()
     this.generateQuestion();
     this.hasStartBtnBeenClicked = !this.hasStartBtnBeenClicked;
   }
-
+  
   checkAnswer(country:any){
     this.api.isDownloadDone = !this.api.isDownloadDone;
     this.isDownloadDone = this.api.isDownloadDone;
@@ -35,17 +34,18 @@ export class TemplateContinentComponent implements OnInit {
     this.totalAnswers++;
     this.generateQuestion();
   }
-
+  
   generateQuestion(){
     this.api.generateRandomCountries();
     this.randomCountry = this.api.randomCountry.name.common;
     this.allAnswerCountries = this.api.generateAllPossibleAnswersForContinent();
     this.isDownloadDone = this.api.isDownloadDone;
   }
-
+  
   constructor(private api:DataFromApi) { }
-
+  
   ngOnInit(): void {
+    this.api.setAllCountries()
   }
 
 }

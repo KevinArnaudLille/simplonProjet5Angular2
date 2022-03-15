@@ -14,12 +14,10 @@ export class BasicTileComponent implements AfterViewInit {
   }
   
   @Input() text = "";
-  @Input() fontSize = "40";
+  @Input() fontSize = "60";
   
   ngAfterViewInit() {
-    console.log(`#${this.text}`);
-    this.fontDOM = document.querySelector(`#${this.text}`);
-    console.log(this.fontDOM);
-    this.fontDOM.style.fontSize = this.fontSize + "px";    
+    // this.fontDOM = document.querySelector(`#${this.text}`);
+    // this.fontDOM.style.fontSize = this.fontSize + "px";    
   }
 }
