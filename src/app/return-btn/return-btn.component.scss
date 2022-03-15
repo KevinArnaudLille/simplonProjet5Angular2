@@ -1,12 +1,16 @@
 .return-btn {
-  .return-circle {
-    position: relative;
-  }
+  // .return-circle {
+  //   position: flex;
+  // }
 
   .return-arrow {
-    position: relative;
+    position: flex;
     margin-bottom: 2.5%;
     margin-left: -9%;
     z-index: 1;
+    background-color:rgba(255,239,206);
+    border: 10px solid #7d634c;
+    padding: 15px;
+    border-radius: 95%;
   }
 }
