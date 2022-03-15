@@ -20,6 +20,6 @@ export class BasicTileComponent implements AfterViewInit {
     console.log(`#${this.text}`);
     this.fontDOM = document.querySelector(`#${this.text}`);
     console.log(this.fontDOM);
-    this.fontDOM.style.fontSize = this.fontSize + "px";
+    this.fontDOM.style.fontSize = this.fontSize + "px";    
   }
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { DataFromApi } from 'src/services/dataFromApi.service';
 
 @Component({
@@ -8,9 +8,15 @@ import { DataFromApi } from 'src/services/dataFromApi.service';
 })
 export class TestAPIComponent implements OnInit {
 
-  constructor(private api:DataFromApi) { }
+  textTest:any;
 
-  ngOnInit(): void {}
+  constructor(private api:DataFromApi) {
+   }
+
+
+
+  ngOnInit(): void {
+  }
 
   testbtn() : void {
     console.log("test start here");
@@ -27,7 +33,10 @@ export class TestAPIComponent implements OnInit {
     console.log(this.api.generateRandomAnswerCountry());
     console.log(this.api.generateRandomAnswerCountry());
     console.log(this.api.generateRandomAnswerCountry());
+    console.log(this.api.randomCountry.capital[0]);
+    
+    this.textToShow = this.api.randomCountry.capital[0];
   }
   
-  textToShow = "Coucou";
+  textToShow : any;
 }
