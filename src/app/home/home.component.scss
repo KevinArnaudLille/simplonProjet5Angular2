@@ -1,4 +1,4 @@
-div{
+div {
   width: fit-content;
   height: fit-content;
   position: absolute;
@@ -7,17 +7,29 @@ div{
   }
 }
 
+#capitale-pin {
+  top: 35%;
+  left: 22%;
+}
 #capitale-tile-link {
-top: 40%;
-left: 50%;
+  top: 24%;
+  left: 25%;
 }
 
+#continent-pin {
+  top: 62%;
+  left: 32%;
+}
 #continent-tile-link {
-  top: 20%;
-  left: 10%;
+  top: 65%;
+  left: 36%;
 }
 
+#flag-pin {
+  top: 45%;
+  left: 72%;
+}
 #flag-tile-link {
-  top: 60%;
-  left: 80%;
+  top: 34%;
+  left: 55%;
 }

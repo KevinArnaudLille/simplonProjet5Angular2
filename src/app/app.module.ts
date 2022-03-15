@@ -16,6 +16,7 @@ import { BasicTileComponent } from './basic-tile/basic-tile.component';
 import { TitleCountryComponent } from './title-country/title-country.component';
 import { RouterModule } from '@angular/router';
 import { NavComponent } from './nav/nav.component';
+import { MapPinComponent } from './map-pin/map-pin.component';
 
 
 @NgModule({
@@ -33,6 +34,7 @@ import { NavComponent } from './nav/nav.component';
     BasicTileComponent,
     TitleCountryComponent,
     NavComponent,
+    MapPinComponent,
   ],
   imports: [
     BrowserModule,
