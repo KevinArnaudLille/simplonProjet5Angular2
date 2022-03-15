@@ -12,7 +12,11 @@ export class DataFromApi {
   allCountriesData: any = [];
   toGenerateAnswerCountries : any = []
   remaingCountries: any = [];
+
+  // Generated random country to guess
   randomCountry: any;
+  
+  // Random country generated to feed possible incorrect answers 
   countryToSend : any;
 
   setAllCountries() {

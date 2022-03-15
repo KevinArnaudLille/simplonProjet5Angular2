@@ -10,11 +10,13 @@ import { ReturnBtnComponent } from './return-btn/return-btn.component';
 import { LogoComponent } from './logo/logo.component';
 import { FlagContainerComponent } from './flag-container/flag-container.component';
 import { HomeComponent } from './home/home.component';
-import { TemlateFlagComponent } from './temlate-flag/temlate-flag.component';
 import { TemplateContinentComponent } from './template-continent/template-continent.component';
 import { TemplateCountryComponent } from './template-country/template-country.component';
 import { TemplateCapitalComponent } from './template-capital/template-capital.component';
 import { BasicTileComponent } from './basic-tile/basic-tile.component';
+import { TitleCountryComponent } from './title-country/title-country.component';
+import { RouterModule } from '@angular/router';
+import { NavComponent } from './nav/nav.component';
 
 
 @NgModule({
@@ -27,18 +29,24 @@ import { BasicTileComponent } from './basic-tile/basic-tile.component';
     LogoComponent,
     FlagContainerComponent,
     HomeComponent,
-    TemlateFlagComponent,
     TemplateContinentComponent,
     TemplateCountryComponent,
     TemplateCapitalComponent,
-    BasicTileComponent
-
+    BasicTileComponent,
+    NavComponent,
+    TitleCountryComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot([
+      { path: 'template-continent', component: TemplateContinentComponent },
+      { path: '', component: HomeComponent },
+      { path: 'template-country', component: TemplateCountryComponent },
+      { path: 'template-capital', component: TemplateCapitalComponent },
+    ]),
   ],
   providers: [DataFromApi],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
