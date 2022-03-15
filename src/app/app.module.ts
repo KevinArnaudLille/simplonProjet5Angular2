@@ -33,8 +33,8 @@ import { NavComponent } from './nav/nav.component';
     TemplateCountryComponent,
     TemplateCapitalComponent,
     BasicTileComponent,
+    TitleCountryComponent,
     NavComponent,
-    TitleCountryComponent
   ],
   imports: [
     BrowserModule,
